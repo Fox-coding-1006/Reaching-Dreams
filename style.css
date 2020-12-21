@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(120deg, #ffffff 0%, #66a6ff 100%);
+}
+
+body  h1{
+    color: #070670;
+
+}
+body p{
+    color: #ccc;
+
+}
+body a{
+    text-decoration: none;
+    color: rgb(54, 6, 6);
+}
+/* Gradient Colors */
+:root{
+    --gradient-1 :linear-gradient(to bottom right, rgb(58, 58, 228), rgb(13, 101, 173));
+
+--gradient-2 : linear-gradient(to bottom right, rgb(80, 80, 255), rgb(253, 119, 119));
+
+--gradient-3 :  linear-gradient(to bottom right, rgb(255, 207, 145),rgb(255, 111, 92));
+
+--gradient-4 : linear-gradient(to bottom right, #1a03e9, #7a0ca5);
+}
+/* Heder */
+header{
+    background-image: url(back.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+/* Gradient Colors */
+
+.navBar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 10px 50px;
+    align-items: center;
+}
+.navBar ul  {
+    flex: 1;
+    text-align: right;
+}
+.navBar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.logo{
+    width: 180px;
+}
+.ctn{
+    padding: 10px 20px;
+    background:  var(--gradient-3);
+    color: rgb(29, 11, 11);
+    border-radius: 37% 63% 0% 100% / 35% 80% 30% 35% ;
+}
+.ctn:hover{
+    background: linear-gradient(to bottom right,rgb(255, 111, 92), rgb(255, 207, 145));
+    transition: 10s;
+}
+.row{
+    display: flex; 
+    align-items: center;
+    padding-top: 5rem;
+}
+.header-contnet ,.hero-img{
+    flex-basis: 50%;
+    padding: 5rem;
+}
+.header-contnet h1{
+    font-size: 7vmin;
+    margin-bottom: 30px;
+    margin-top: 7rem;
+    color: #4642FF;
+}
+.header-contnet p{
+    margin-bottom: 30px;
+}
+.learnmore{
+    padding: 10px 20px;
+    border : 1px solid blue;
+    border-radius: 50px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.learnmore:hover{
+    background: blue;
+    transition: 3.2s;
+    
+    padding: 10px 20px;
+    
+}
+/* Services */
+.services{
+    margin-top: 80px;
+
+}
+.container{
+    padding: 3rem;
+    display: flex;
+}
+.grid-wrapper, .services-content{
+    flex-basis: 50%;
+}
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2em;
+    padding: 2rem;
+}
+.grid-box{
+    background: #009efd;
+    height: 200px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 69% 31% 49% 51% / 0% 98% 2% 100%  ;
+    box-shadow: 15px 13px 30px rgba(0, 0, 0, 0.281);
+}
+
+
+
+.grid-box img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.grid-box h1{
+    color: whitesmoke;
+    font-weight: 500;
+
+}
+.mobileapp{
+    background: var(--gradient-1);
+}
+.webdesign{
+    background: var(--gradient-2);
+}
+.courses{
+    background: var(--gradient-3);
+}
+.easy{
+    background: var(--gradient-4);
+}
+.grid-box img:hover{
+    width: 110px;
+    height: 110px;
+    transition: 0.7s;
+}
+.services-content p{
+    color: #150046;
+    font-weight: 200;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.services-content h1{
+    color: #4206b1;
+    font-weight: 200;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.services-content{
+
+}
+.hero-img{
+    margin-top: 150px;
+    
+}
+.course{
+    
+}
+.Me{
+    width: 100%;
+    height: 400px;
+}
+.Ceo{
+    margin-left: 500px;
+    width: 300px;
+    height: 400px;
+    background: whitesmoke;
+    text-align: center;
+    border-radius: 15%;
+}
+.Ceo h1{
+    color: rgb(16, 75, 163);
+    font-weight: 300;
+}
+.Ceo img{
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.Ceo:hover{
+    animation: animate 2s;
+}
+@keyframes animate{
+    0%{
+        margin-top: 10px;
+
+    }
+    10%{
+        margin-top: 20px;
+
+    }
+    20%{
+        margin-top: 30px;
+
+    }
+    30%{
+        margin-top: 40px;
+
+    }
+    40%{
+        margin-top: 50px;
+
+    }
+    50%{
+        margin-top: 40px;
+
+    }
+    60%{
+        margin-top: 30px;
+
+    }
+    70%{
+        margin-top: 20px;
+
+    }
+    80%{
+        margin-top: 10px;
+
+    }
+    90%{
+        margin-top: 20px;
+
+    }
+    100%{
+        margin-top: 0px;
+
+    }
+}
+/* Footer*/
+.footer{
+    margin-top: 80px;
+    background: url(images/footer-agency.png) ;
+}
+.col-4{
+    background: rgba(255, 248, 220, 0);
+    min-height: 400px;
+}
+.fa-facebook{
+    color: Blue;
+    font-size: 70px;
+    
+}
+.fa-twitter{
+    color: rgb(0, 183, 255);
+    font-size: 70px;
+}
+.fa-instagram{
+    color: purple;
+    font-size: 70px;
+}
+.fa-github{
+    color: gray;
+    font-size: 70px;
+}
+.fa{
+    margin-left:  30px;
+    margin-top: 40px;
+}
+.fa-facebook:hover{
+
+}
+.footer p{
+    color: #000;
+}
